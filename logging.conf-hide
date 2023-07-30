@@ -1,0 +1,13 @@
+#
+# modify the verbosity variable on the fly without restarting the server through unbound-control
+# usage: unbound-control verbosity X (where is is a number from 0 --> 5, getting more verbose each time)
+#
+server:
+    verbosity: 0
+    #logfile: "/opt/var/log/unbound.log"
+    logfile: ""
+    log-queries: yes
+    log-replies: yes
+    #log-tag-queryreply: yes
+    log-local-actions: yes
+    log-servfail: yes
